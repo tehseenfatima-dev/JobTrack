@@ -1,0 +1,271 @@
+.forest-bg {
+
+    position: absolute;
+
+    inset: 0;
+
+    overflow: hidden;
+
+    z-index: 0;
+
+}
+
+
+/* Forest Background */
+
+.forest-image {
+
+    position: absolute;
+
+    inset: 0;
+
+    background-image:
+    url("https://images.unsplash.com/photo-1448375240586-882707db888b");
+
+    background-size: cover;
+
+    background-position: center;
+
+    animation: forestZoom 25s ease-in-out infinite alternate;
+
+}
+
+
+
+/* Dark Teal Overlay */
+
+.forest-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+
+    linear-gradient(
+        rgba(4,47,46,0.65),
+        rgba(4,47,46,0.92)
+    );
+
+}
+
+
+
+/* Moving Fog */
+
+.fog {
+
+    position: absolute;
+
+    width: 120%;
+
+    height: 120%;
+
+    top: -10%;
+
+    left: -10%;
+
+    background:
+
+    radial-gradient(
+        circle,
+        rgba(255,255,255,0.08),
+        transparent 60%
+    );
+
+    filter: blur(60px);
+
+    animation: fogMove 18s linear infinite alternate;
+
+}
+
+
+
+/* Glowing Lights */
+
+.light {
+
+    position:absolute;
+
+    width:350px;
+
+    height:350px;
+
+    border-radius:50%;
+
+    filter:blur(120px);
+
+    opacity:.25;
+
+}
+
+
+
+.light-1 {
+
+    background:#14B8A6;
+
+    top:-100px;
+
+    left:-80px;
+
+    animation: floatLight 8s infinite;
+
+}
+
+
+
+.light-2 {
+
+    background:#0EA5E9;
+
+    right:-120px;
+
+    top:40%;
+
+    animation: floatLight 10s infinite reverse;
+
+}
+
+
+
+.light-3 {
+
+    background:#22C55E;
+
+    bottom:-120px;
+
+    left:40%;
+
+    animation: floatLight 12s infinite;
+
+}
+
+
+
+/* Particles */
+
+.particles {
+
+    position:absolute;
+
+    inset:0;
+
+}
+
+
+
+.particles span {
+
+    position:absolute;
+
+    bottom:-20px;
+
+    width:5px;
+
+    height:5px;
+
+    background:#14B8A6;
+
+    border-radius:50%;
+
+    opacity:.4;
+
+    animation: particleUp linear infinite;
+
+}
+
+
+
+/* Animations */
+
+
+@keyframes forestZoom {
+
+    from {
+
+        transform:scale(1);
+
+    }
+
+    to {
+
+        transform:scale(1.08);
+
+    }
+
+}
+
+
+
+@keyframes fogMove {
+
+    from {
+
+        transform:translateX(-40px);
+
+    }
+
+    to {
+
+        transform:translateX(40px);
+
+    }
+
+}
+
+
+
+@keyframes floatLight {
+
+    0% {
+
+        transform:translateY(0);
+
+    }
+
+
+    50% {
+
+        transform:translateY(-40px);
+
+    }
+
+
+    100% {
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+@keyframes particleUp {
+
+    from {
+
+        transform:translateY(0);
+
+        opacity:0;
+
+    }
+
+
+    20% {
+
+        opacity:.5;
+
+    }
+
+
+    to {
+
+        transform:translateY(-100vh);
+
+        opacity:0;
+
+    }
+
+}

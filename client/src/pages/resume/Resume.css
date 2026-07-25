@@ -1,0 +1,221 @@
+.resume-page {
+
+    min-height: 100%;
+
+    padding: 20px;
+
+}
+
+
+.resume-card {
+
+    background: #0F3D3A;
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+
+}
+
+
+.resume-title {
+
+    font-size: 32px;
+
+    font-weight: 700;
+
+    color: white;
+
+    margin-bottom: 30px;
+
+}
+
+
+
+.resume-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+
+}
+
+
+
+.resume-grid div {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+
+}
+
+
+
+.full-width {
+
+    grid-column: span 2;
+
+}
+
+
+
+label {
+
+    color: #99f6e4;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+}
+
+
+
+input,
+textarea {
+
+    background: #052E2B;
+
+    border: 1px solid rgba(255,255,255,0.1);
+
+    color: white;
+
+    border-radius: 12px;
+
+    padding: 12px;
+
+    outline: none;
+
+    transition: 0.3s;
+
+}
+
+
+
+input:focus,
+textarea:focus {
+
+    border-color: #14B8A6;
+
+    box-shadow: 0 0 0 2px rgba(20,184,166,0.2);
+
+}
+
+
+
+input::placeholder,
+textarea::placeholder {
+
+    color: #94a3b8;
+
+}
+
+
+
+input[type="file"] {
+
+    cursor: pointer;
+
+}
+
+
+
+.resume-buttons {
+
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 30px;
+
+}
+
+
+
+.save-btn,
+.delete-btn {
+
+    padding: 12px 25px;
+
+    border-radius: 12px;
+
+    border: none;
+
+    cursor: pointer;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+
+}
+
+
+
+.save-btn {
+
+    background: #14B8A6;
+
+    color: #042F2E;
+
+}
+
+
+
+.save-btn:hover {
+
+    background: #2DD4BF;
+
+}
+
+
+
+.delete-btn {
+
+    background: rgba(239,68,68,0.15);
+
+    color: #fca5a5;
+
+    border: 1px solid rgba(239,68,68,0.3);
+
+}
+
+
+
+.delete-btn:hover {
+
+    background: rgba(239,68,68,0.3);
+
+}
+
+
+
+@media(max-width:768px){
+
+    .resume-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .full-width {
+
+        grid-column: span 1;
+
+    }
+
+
+    .resume-buttons {
+
+        flex-direction: column;
+
+    }
+
+}

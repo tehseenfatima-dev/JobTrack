@@ -1,0 +1,172 @@
+.settings-page{
+
+    padding:20px;
+
+}
+
+
+
+.settings-card{
+
+    background:#0F3D3A;
+
+    padding:30px;
+
+    border-radius:20px;
+
+}
+
+
+
+.settings-title{
+
+    color:white;
+
+    font-size:32px;
+
+    font-weight:700;
+
+    margin-bottom:30px;
+
+}
+
+
+
+.settings-section,
+.danger-section{
+
+    background:#052E2B;
+
+    padding:20px;
+
+    border-radius:15px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.section-header{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    color:#5EEAD4;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.section-header h2{
+
+    color:white;
+
+    font-size:18px;
+
+}
+
+
+
+input{
+
+    width:100%;
+
+    padding:12px;
+
+    margin-bottom:12px;
+
+    background:#0F3D3A;
+
+    border:1px solid rgba(255,255,255,.1);
+
+    color:white;
+
+    border-radius:10px;
+
+}
+
+
+
+.toggle-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    color:#cbd5e1;
+
+}
+
+
+
+.toggle-row input{
+
+    width:auto;
+
+}
+
+
+
+.secondary-btn{
+
+    background:#14B8A6;
+
+    color:#042F2E;
+
+    padding:10px 20px;
+
+    border-radius:10px;
+
+    border:none;
+
+    cursor:pointer;
+
+}
+
+
+
+.delete-btn{
+
+    background:#ef4444;
+
+    color:white;
+
+    padding:10px 20px;
+
+    border-radius:10px;
+
+    border:none;
+
+    cursor:pointer;
+
+}
+
+
+
+.save-settings{
+
+    width:100%;
+
+    background:#14B8A6;
+
+    color:#042F2E;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+}
