@@ -9,7 +9,7 @@ import {
     FaTrash
 } from "react-icons/fa";
 
-import "./Settings.css";
+import "./settings.css";
 
 
 function Settings() {
