@@ -23,13 +23,16 @@ const app = express();
 
 // Middleware
 
+const allowedOrigin = "https://job-track-fi59-1duo4h6zp-team-pro12.vercel.app";
+
 app.use(
     cors({
-        origin: "https://job-track-fi59-1duo4h6zp-team-pro12.vercel.app",
+        origin: allowedOrigin,
         credentials: true
     })
 );
 
+console.log("CORS running for:", allowedOrigin);
 app.use(express.json());
 
 app.use(
