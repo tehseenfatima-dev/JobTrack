@@ -25,7 +25,7 @@ const app = express();
 
 app.use(
     cors({
-        origin: "http://localhost:5173",
+        origin: "job-track-fi59-1duo4h6zp-team-pro12.vercel.app",
         credentials: true
     })
 );
