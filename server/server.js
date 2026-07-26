@@ -23,11 +23,12 @@ const app = express();
 
 // Middleware
 
-const allowedOrigin = "https://job-track-fi59-1duo4h6zp-team-pro12.vercel.app";
-
 app.use(
     cors({
-        origin: allowedOrigin,
+        origin: [
+            "http://localhost:5173",
+            "https://job-track-fi59-1duo4h6zp-team-pro12.vercel.app"
+        ],
         credentials: true
     })
 );
