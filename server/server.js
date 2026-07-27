@@ -33,7 +33,7 @@ app.use(
     })
 );
 
-console.log("CORS running for:", allowedOrigin);
+
 app.use(express.json());
 
 app.use(
